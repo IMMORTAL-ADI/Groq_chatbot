@@ -5,7 +5,8 @@ from groq import Groq
 
 load_dotenv()
 
-api_key=os.getenv("groq_api_key")
+#api_key=os.getenv("groq_api_key")
+api_key=st.secrets['groq_api_key']
 
 def get_reponse(message):
     """
